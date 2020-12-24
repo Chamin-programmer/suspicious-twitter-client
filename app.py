@@ -18,7 +18,7 @@ api = tweepy.API(auth)
 def tweet(tweet_text):
     api.update_status(str(tweet_text))
 
-# ツイートs
+# ツイート
 text = input("ツイート内容を入力して下さい: ")
 text = binascii.hexlify(text.encode('utf-8'))
 tweet(str(text).replace('b\'', '').replace('\'', ''))
